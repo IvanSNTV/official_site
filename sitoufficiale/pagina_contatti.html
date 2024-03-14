@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; /* Rimuove i margini predefiniti del corpo */
+            padding: 0; /* Rimuove il padding predefinito del corpo */
+        }
+        .menu-container {
+            display: flex;
+            justify-content: space-between; /* Positions logo to the left and menu to the right */
+            align-items: center; /* Aligns items vertically */
+            background-color: orange; /* Sfondo del menu */
+            padding: 10px 20px; /* Padding aggiunto per separare il logo e il menu dal bordo */
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0; /* Centers the menu horizontally */
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            margin-right: 70px; /* Aggiunto margine destro per compensare l'ingrandimento del logo */
+        }
+        .menu li {
+            background-color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            transition: background-color 0.3s, border-radius 0.3s;
+        }
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 10px; /* Aggiunto per bordi arrotondati */
+        }
+        .menu li a:hover {
+            background-color: #555; /* Cambia il colore al passaggio del mouse */
+            border-radius: 20px; /* Rendi i bordi più arrotondati al passaggio del mouse */
+        }
+        /* Aggiunta per il footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 40px; /* Adjust as needed */
+            height: 40px; /* Adjust as needed */
+            margin: 0 10px; /* Adjust as needed */
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            position: relative;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-text {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        .form-group input[type="submit"] {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #ff7f00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <img src="logo_bg.png" alt="Logo" class="logo"> <!-- Add your logo here -->
+        <div style="flex-grow: 1;"> <!-- This div will take up the remaining space, pushing the menu to the center -->
+            <ul class="menu">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="servizi_page.html">Tickets</a></li>
+                <li><a href="pagina3.html">Galleria</a></li>
+                <li><a href="carello.html">Carrello</a></li>
+                <li><a href="contattaci.html">Contatti</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Testo sotto il menu -->
+    <div class="form-text">
+        <p>Unisciti alla nostra fantastica community</p>
+    </div>
+
+    <!-- Modulo di contatto -->
+    <div class="form-container">
+        <h2>Modulo di Contatto</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cognome">Cognome:</label>
+                <input type="text" id="cognome" name="cognome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="titolo-studio">Titolo di Studio:</label>
+                <input type="text" id="titolo-studio" name="titolo-studio">
+            </div>
+            <div class="form-group">
+                <label for="data-nascita">Data di Nascita:</label>
+                <input type="date" id="data-nascita" name="data-nascita">
+            </div>
+            <div class="form-group">
+                <label for="luogo-nascita">Luogo di Nascita:</label>
+                <input type="text" id="luogo-nascita" name="luogo-nascita">
+            </div>
+            <div class="form-group">
+                <label for="sesso">Sesso:</label>
+                <select id="sesso" name="sesso">
+                    <option value="maschio">Maschio</option>
+                    <option value="femmina">Femmina</option>
+                    <option value="altro">Altro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="indirizzo">Indirizzo di Casa:</label>
+                <textarea id="indirizzo" name="indirizzo"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Invia">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Seguici sui social:
+        <div class="social-icons">
+            <a href="#"><img src="instagram_logo-removebg-preview.png" alt="Instagram"></a>
+            <a href="#"><img src="whatsapp_logo-removebg-preview.png" alt="WhatsApp"></a>
+            <a href="#"><img src="download-removebg-preview.png" alt="TikTok"></a>
+        </div>
+        <p>Altre informazioni qui</p>
+    </div>
+
+</body>
+</html>

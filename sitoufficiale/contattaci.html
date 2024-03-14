@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Rimuove i margini predefiniti del corpo */
+            padding: 0; /* Rimuove il padding predefinito del corpo */
+        }
+        .menu-container {
+            display: flex;
+            justify-content: space-between; /* Positions logo to the left and menu to the right */
+            align-items: center; /* Aligns items vertically */
+            background-color: orange; /* Sfondo del menu */
+            padding: 10px 20px; /* Padding aggiunto per separare il logo e il menu dal bordo */
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0; /* Centers the menu horizontally */
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            margin-right: 70px; /* Aggiunto margine destro per compensare l'ingrandimento del logo */
+        }
+        .menu li {
+            background-color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            transition: background-color 0.3s, border-radius 0.3s;
+        }
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 10px; /* Aggiunto per bordi arrotondati */
+        }
+        .menu li a:hover {
+            background-color: #555; /* Cambia il colore al passaggio del mouse */
+            border-radius: 20px; /* Rendi i bordi più arrotondati al passaggio del mouse */
+        }
+        /* Aggiunta per il footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 40px; /* Adjust as needed */
+            height: 40px; /* Adjust as needed */
+            margin: 0 10px; /* Adjust as needed */
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"], /* Aggiunto per il campo del numero di telefono */
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .form-text p {
+            font-size: 18px;
+            text-align: justify;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <img src="logo_bg.png" alt="Logo" class="logo"> <!-- Add your logo here -->
+        <div style="flex-grow: 1;"> <!-- This div will take up the remaining space, pushing the menu to the center -->
+            <ul class="menu">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="servizi_page.html">Tickets</a></li>
+                <li><a href="pagina3.html">Galleria</a></li>
+                <li><a href="carello.html">Carrello</a></li>
+                <li><a href="contattaci.html">Contatti</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Testo sotto il menu -->
+    <div class="form-text">
+        <p>Ci impegniamo a rendere la tua esperienza di acquisto piacevole, efficiente e conveniente.Non esitate a contattarci; Dal lunedi al venerdi dalle 9:00 CST alle 18:00 CST; chiuso sabato, domenica e festivi.
+
+            Quando invii un'e-mail, includi nome e cognome, indirizzo (incluso il codice fiscale), numero di telefono e numero dell'ordine(se disponibile)
+
+            Contattaci su:betheeventmail@gmail.com
+        </p>
+    </div>
+
+    <!-- Contattaci -->
+    <div class="container">
+        <h2>Contattaci</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefono:</label> <!-- Aggiunto campo per il numero di telefono -->
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Invia">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Seguici sui social:
+        <div class="social-icons">
+            <a href="#"><img src="instagram_logo-removebg-preview.png" alt="Instagram"></a>
+            <a href="#"><img src="whatsapp_logo-removebg-preview.png" alt="WhatsApp"></a>
+            <a href="#"><img src="download-removebg-preview.png" alt="TikTok"></a>
+        </div>
+        <p>Altre informazioni qui</p>
+    </div>
+
+</body>
+</html>

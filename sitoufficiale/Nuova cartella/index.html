@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servizi Offerti</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .service {
+        width: calc(25% - 20px);
+        margin-bottom: 20px;
+        background-color: #f0f0f0;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .service h2 {
+        margin-top: 0;
+    }
+    .service p {
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: 768px) {
+        .service {
+            width: calc(50% - 20px);
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .service {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="service">
+        <h2>Eventi Organizzati</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere accumsan tincidunt.</p>
+    </div>
+    <div class="service">
+        <h2>Conferenze</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere accumsan tincidunt.</p>
+    </div>
+    <div class="service">
+        <h2>Workshop</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere accumsan tincidunt.</p>
+    </div>
+    <div class="service">
+        <h2>Corsi di Formazione</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere accumsan tincidunt.</p>
+    </div>
+</div>
+
+</body>
+</html>

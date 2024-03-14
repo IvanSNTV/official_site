@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendita Biglietti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .ticket {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .ticket img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .ticket h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .ticket p {
+            margin-bottom: 15px;
+        }
+        .ticket .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .ticket button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .ticket button:hover {
+            background-color: #0056b3;
+        }
+        /* Menu styles */
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: orange;
+            padding: 10px 20px;
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            margin-right: 70px;
+        }
+        .menu li {
+            background-color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            transition: background-color 0.3s, border-radius 0.3s;
+        }
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .menu li a:hover {
+            background-color: #555;
+            border-radius: 20px;
+        }
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <img src="logo_bg.png" alt="Logo" class="logo">
+        <div style="flex-grow: 1;">
+            <ul class="menu">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="servizi_page.html">Tickets</a></li>
+                <li><a href="pagina3.html">Galleria</a></li>
+                <li><a href="carello.html">Carrello</a></li>
+                <li><a href="contattaci.html">Contatti</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Vendita Biglietti</h1>
+        
+        <!-- Biglietto 1 -->
+        <div class="ticket">
+            <img src="anteprima_tickets.jpg" alt="Biglietto 1">
+            <h2>Concerto Rock</h2>
+            <p>Descrizione del concerto rock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error.</p>
+            <p>Data: 12 Maggio 2024</p>
+            <p>Ora: 20:00</p>
+            <p>Luogo: Auditorium XYZ</p>
+            <p class="price">Prezzo: $20</p>
+            <button>Acquista</button>
+        </div>
+        
+        <!-- Biglietto 2 -->
+        <div class="ticket">
+            <img src="anteprima_tickets.jpg" alt="Biglietto 2">
+            <h2>Partita di Calcio</h2>
+            <p>Descrizione della partita di calcio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error.</p>
+            <p>Data: 18 Maggio 2024</p>
+            <p>Ora: 15:00</p>
+            <p>Luogo: Stadio ABC</p>
+            <p class="price">Prezzo: $30</p>
+            <button>Acquista</button>
+        </div>
+        
+        <!-- Biglietto 3 -->
+        <div class="ticket">
+            <img src="anteprima_tickets.jpg" alt="Biglietto 3">
+            <h2>Concerto Rock</h2>
+            <p>Descrizione del concerto rock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error.</p>
+            <p>Data: 12 Maggio 2024</p>
+            <p>Ora: 20:00</p>
+            <p>Luogo: Auditorium XYZ</p>
+            <p class="price">Prezzo: $20</p>
+            <button>Acquista</button>
+        </div>
+
+
+        <!-- Biglietto 4 -->
+        <div class="ticket">
+            <img src="anteprima_tickets.jpg" alt="Biglietto 4">
+            <h2>Concerto Rock</h2>
+            <p>Descrizione del concerto rock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error.</p>
+            <p>Data: 12 Maggio 2024</p>
+            <p>Ora: 20:00</p>
+            <p>Luogo: Auditorium XYZ</p>
+            <p class="price">Prezzo: $20</p>
+            <button>Acquista</button>
+        </div>
+
+
+        <!-- Biglietto 5 -->
+        <div class="ticket">
+            <img src="anteprima_tickets.jpg" alt="Biglietto 5">
+            <h2>Concerto Rock</h2>
+            <p>Descrizione del concerto rock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error.</p>
+            <p>Data: 12 Maggio 2024</p>
+            <p>Ora: 20:00</p>
+            <p>Luogo: Auditorium XYZ</p>
+            <p class="price">Prezzo: $20</p>
+            <button>Acquista</button>
+        </div>
+
+
+        <!-- Biglietto 6 -->
+        <div class="ticket">
+            <img src="anteprima_tickets.jpg" alt="Biglietto 6">
+            <h2>Concerto Rock</h2>
+            <p>Descrizione del concerto rock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error.</p>
+            <p>Data: 12 Maggio 2024</p>
+            <p>Ora: 20:00</p>
+            <p>Luogo: Auditorium XYZ</p>
+            <p class="price">Prezzo: $20</p>
+            <button>Acquista</button>
+        </div>
+
+
+        <!-- Biglietto 7 -->
+        <div class="ticket">
+            <img src="anteprima_tickets.jpg" alt="Biglietto 7">
+            <h2>Concerto Rock</h2>
+            <p>Descrizione del concerto rock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error.</p>
+            <p>Data: 12 Maggio 2024</p>
+            <p>Ora: 20:00</p>
+            <p>Luogo: Auditorium XYZ</p>
+            <p class="price">Prezzo: $20</p>
+            <button>Acquista</button>
+        </div>
+
+
+        <!-- Biglietto 8 -->
+        <div class="ticket">
+            <img src="anteprima_tickets.jpg" alt="Biglietto 8">
+            <h2>Concerto Rock</h2>
+            <p>Descrizione del concerto rock. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error.</p>
+            <p>Data: 12 Maggio 2024</p>
+            <p>Ora: 20:00</p>
+            <p>Luogo: Auditorium XYZ</p>
+            <p class="price">Prezzo: $20</p>
+            <button>Acquista</button>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        Seguici sui social:
+        <div class="social-icons">
+            <a href="#"><img src="instagram_logo-removebg-preview.png" alt="Instagram"></a>
+            <a href="#"><img src="whatsapp_logo-removebg-preview.png" alt="WhatsApp"></a>
+            <a href="#"><img src="download-removebg-preview.png" alt="TikTok"></a>
+        </div>
+        <p>Altre informazioni qui</p>
+    </div>
+
+</body>
+</html>

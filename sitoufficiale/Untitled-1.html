@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Rimuove i margini predefiniti del corpo */
+            padding: 0; /* Rimuove il padding predefinito del corpo */
+        }
+        .menu-container {
+            display: flex;
+            justify-content: space-between; /* Positions logo to the left and menu to the right */
+            align-items: center; /* Aligns items vertically */
+            background-color: orange; /* Sfondo del menu */
+            padding: 10px 20px; /* Padding aggiunto per separare il logo e il menu dal bordo */
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0; /* Centers the menu horizontally */
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            margin-right: 70px; /* Aggiunto margine destro per compensare l'ingrandimento del logo */
+        }
+        .menu li {
+            background-color: #333;
+            border-radius: 10px;
+            margin: 10px;
+            transition: background-color 0.3s, border-radius 0.3s;
+        }
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 10px; /* Aggiunto per bordi arrotondati */
+        }
+        .menu li a:hover {
+            background-color: #555; /* Cambia il colore al passaggio del mouse */
+            border-radius: 20px; /* Rendi i bordi più arrotondati al passaggio del mouse */
+        }
+        .video-background {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translate(-50%, -50%);
+        }
+        marquee {
+            font-size: 24px;
+            color: #ff0000;
+            background-color: #000;
+            padding: 20px;
+            font-weight: bold;
+        }
+        .logo {
+            border-radius: 50%; /* This will make the logo round */
+            height: 70px; /* Aumento delle dimensioni del logo */
+            width: 70px; /* Aumento delle dimensioni del logo */
+            margin-right: 10px; /* Adjust as needed */
+            padding: 10px; /* Padding aggiunto per separare il logo dal bordo */
+        }
+        /* Aggiunta per il footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 40px; /* Adjust as needed */
+            height: 40px; /* Adjust as needed */
+            margin: 0 10px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    
+    <marquee behavior="scroll" direction="left">!!!!Scopri le nostre offerte!!!!!</marquee>
+    
+    <div class="menu-container">
+        <img src="logo_bg.png" alt="Logo" class="logo"> <!-- Add your logo here -->
+        <div style="flex-grow: 1;"> <!-- This div will take up the remaining space, pushing the menu to the center -->
+            <ul class="menu">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="servizi_page.html">Tickets</a></li>
+                <li><a href="pagina3.html">Galleria</a></li>
+                <li><a href="carello.html">Carrello</a></li>
+                <li><a href="contattaci.html">Contatti</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="video_home.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Seguici sui social:
+        <div class="social-icons">
+            <a href="#"><img src="instagram_logo-removebg-preview.png" alt="Instagram"></a>
+            <a href="#"><img src="whatsapp_logo-removebg-preview.png" alt="WhatsApp"></a>
+            <a href="#"><img src="download-removebg-preview.png" alt="TikTok"></a>
+        </div>
+        <p>Altre informazioni qui</p>
+    </div>
+
+</body>
+</html>
